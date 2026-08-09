@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FreeCodeCamp survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form where you can tell us what you think about the service you have recieved.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter your name <input id="name" name="name" type="text" placeholder="Firstname Lastname" required /></label>
+        <label for="email" id="email-label">Enter your Email <input id="email" name="email" type="email" placeholder="Google@gmail.com" required /></label>
+        <label for="number" id="number-label">Age (optional) <input id="number" name="number" type="number" min="13" max="120" placeholder="13" /></label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">What do you use this website for?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Learning</option>
+            <option value="2">Reference</option>
+          </select>
+      </label>
+      <legend>Please select all valid options</legend>
+      <label for="personal-use"><input value="personal" id="personal-use" type="radio" name="account-type" class="inline" checked />Personal</label>
+      <label for="professional-use"><input value="professional" id="professional-use" type="radio" name="account-type" class="inline" />Professional</label>
+      <label for"checks">What technologies did you like the most? </label>
+      <label for="like">
+        <input value="html" class="inline" id="like" type="checkbox" name="like" />HTML
+      </label>
+      <label for="like">
+        <input value="css" class="inline" id="like" type="checkbox" name="like" />CSS
+      </label>
+      <label for="like">
+        <input value="javascript" class="inline" id="like" type="checkbox" name="like" />JavaScript
+      </label>
+      <label for="like">
+        <input value="python" class="inline" id="like" type="checkbox" name="like" />Python
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Please write any additional comments here: 
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I like most about this website..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
